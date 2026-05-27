@@ -8,9 +8,9 @@
 <script>
 
   function embedVideo(link) {
-    const match = link.match(
-        /(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\n?#]+)/
-    );
+   const match = link.match(
+    /(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\n?#]+)/
+);
 
     if (!match) {
         console.error("Invalid YouTube link");
@@ -41,9 +41,8 @@ embedVideo(link);
 
   _____________________________________________________________________________
 
-  <button onclick=embedVideo()> enter video link </button>
+  <button onclick=enterlink()> enter video link </button>
   
-<video> <source src="https://www.youtube.com/watch?v=F2i-UIKAihE" controls> abc </video>
-  
+  <div id="videoContainer"></div>
 </body>
 </html>
